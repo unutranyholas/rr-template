@@ -27,7 +27,7 @@ export default function Index({
   const { user } = loaderData;
   if (!user) {
     return (
-      <div className="p-8">
+      <div className="~p-8/12">
         <Form action="/auth/google" method="post">
           <Button type={"submit"}>Login with Google</Button>
         </Form>

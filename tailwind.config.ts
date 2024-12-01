@@ -1,10 +1,16 @@
+import fluid, { extract, screens, fontSize } from "fluid-tailwind";
 import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
+  content: {
+    files: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
+    extract,
+  },
   theme: {
     extend: {
+      screens,
+      fontSize,
       fontFamily: {
         sans: [
           "Inter",
@@ -66,5 +72,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), fluid],
 } satisfies Config;
