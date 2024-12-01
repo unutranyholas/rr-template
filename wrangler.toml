@@ -1,0 +1,12 @@
+workers_dev = true
+name = "it-stack-rr"
+compatibility_date = "2024-11-18"
+compatibility_flags = ["nodejs_compat"]
+main = "./build/server/index.js"
+assets = { directory = "./build/client/" }
+
+[[d1_databases]]
+binding = "DB"
+database_name = "it-stack-rr"
+database_id = "a08825c8-d4b0-4001-8e1e-431bf9b75430"
+migrations_dir = "drizzle"
