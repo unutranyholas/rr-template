@@ -10,3 +10,6 @@ binding = "DB"
 database_name = "it-stack-rr"
 database_id = "a08825c8-d4b0-4001-8e1e-431bf9b75430"
 migrations_dir = "drizzle"
+
+[vars]
+GOOGLE_CALLBACK_BASE_URL="https://it-stack-rr.trafimovich.workers.dev"
